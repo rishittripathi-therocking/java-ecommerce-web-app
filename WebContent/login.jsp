@@ -8,9 +8,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ajio Clone</title>
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome//4.2.0/font-awesome.min.css" rel="styleshhet"/>
+
 <link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+
 <!-- jQuery library -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -61,7 +62,7 @@
 					<form action="AjioServlet" method="post">
 						<div class="form-group" style="padding:5px;">
 						<div class="row">
-							<label for="email1" class="col-5" ><span style="font-size:24px;font-weight:bold;">Email:<i class="fas fa-search"></i></span> </label>
+							<label for="email1" class="col-5" ><span style="font-size:24px;font-weight:bold;">Email:<i class="fa fa-search"></i></span> </label>
 							 <input type="email" class="form-control col-7 shadow-lg"
 								placeholder="Enter Email" name="email1"> <br>
 							</div>
