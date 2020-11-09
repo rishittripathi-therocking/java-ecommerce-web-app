@@ -46,31 +46,37 @@
 	</div>
 	</nav>
 
-	<div class="modal" id="login">
-		<div class="modal-dialog">
+	<div class="modal fade" id="login">
+		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 
 				<!-- Modal Header -->
-				<div class="modal-header bg-warning">
+				<div class="modal-header bg-primary">
 					<h4 class="modal-title">Enter details to login!</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 
 				<!-- Modal body -->
-				<div class="modal-body">
+				<div class="modal-body align items-center">
 					<form action="AjioServlet" method="post">
-						<div class="form-group">
-							Email: <input type="email" class="form-control col-sm-5"
+						<div class="form-group" style="padding:5px;">
+						<div class="row">
+							<label for="email1" class="col-5" ><span style="font-size:24px;font-weight:bold;">Email:</span></label>
+							 <input type="email" class="form-control col-7"
 								placeholder="Enter Email" name="email1"> <br>
-							Password: <input type="password" class="form-control col-sm-5"
+							</div>
+						<div class="row">
+							<label for="pwd1" class="col-5" ><span style="font-size:24px;font-weight:bold;">Password:</span></label>
+							 <input type="password" class="form-control col-7"
 								placeholder="Enter password" name="pwd1">
+						</div>
 						</div>
 				</div>
 
 				<!-- Modal footer -->
 				<div class="modal-footer">
 					<input type="submit" value="LogIn" name="bt"
-						class="btn btn-primary">
+						class="btn btn-outline-primary" style="width:100%;">
 				</div>
 				</form>
 
