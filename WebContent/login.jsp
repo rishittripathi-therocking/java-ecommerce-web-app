@@ -47,17 +47,17 @@
 	</nav>
 
 	<div class="modal fade" id="login">
-		<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-dialog modal-dialog-centered" >
 			<div class="modal-content">
 
 				<!-- Modal Header -->
 				<div class="modal-header bg-primary">
-					<h4 class="modal-title">Enter details to login!</h4>
+					<h4 class="modal-title">Login</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 
 				<!-- Modal body -->
-				<div class="modal-body align items-center">
+				<div class="modal-body align-items-center">
 					<form action="AjioServlet" method="post">
 						<div class="form-group" style="padding:5px;">
 						<div class="row">
@@ -84,32 +84,43 @@
 		</div>
 	</div>
 	<div class="modal" id="signup">
-		<div class="modal-dialog">
+		<div class="modal-dialog  modal-dialog-centered">
 			<div class="modal-content">
 
 				<!-- Modal Header -->
-				<div class="modal-header bg-warning">
-					<h4 class="modal-title">Enter details to register!</h4>
+				<div class="modal-header bg-primary">
+					<h4 class="modal-title">Register</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 
 				<!-- Modal body -->
 				<div class="modal-body">
 					<form action="AjioServlet" method="post">
-						<div class="form-group">
-							Name: <input type="text" class="form-control col-sm-5"
-								placeholder="Enter Name" name="name"> <br> Email: <input
-								type="email" class="form-control col-sm-5"
+						<div class="form-group" style="padding:5px;">
+						<div class="row">
+							<label for="name" class="col-5" ><span style="font-size:24px;font-weight:bold;">Name:</span></label>
+							<input type="text" class="form-control col-7"
+								placeholder="Enter Name" name="name"> <br> 
+						</div>
+								
+						<div class="row">
+							<label for="email" class="col-5" ><span style="font-size:24px;font-weight:bold;">Email:</span></label>
+								 <input
+								type="email" class="form-control col-7"
 								placeholder="Enter Email" name="email"> <br>
-							Password: <input type="password" class="form-control col-sm-5"
+						</div>
+						<div class="row">
+							<label for="pwd" class="col-5" ><span style="font-size:24px;font-weight:bold;">Password:</span></label>
+							 <input type="password" class="form-control col-sm-7"
 								placeholder="Enter password" name="pwd">
+						</div>
 						</div>
 				</div>
 
 				<!-- Modal footer -->
 				<div class="modal-footer">
 					<input type="submit" value="Register" name="bt"
-						class="btn btn-primary">
+						class="btn btn-outline-primary" style="width:100%">
 				</div>
 				</form>
 
