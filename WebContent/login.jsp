@@ -11,6 +11,7 @@
 
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 <!-- jQuery library -->
 <script
@@ -29,19 +30,35 @@
 	width: 100%;
 	height: 50%;
 }
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  border-radius:5px;
+}
 </style>
 </head>
 <body>
+
 	<nav class="navbar bg-secondary navbar-expand">
 	<div class="container">
 		<img alt="Not Found" src="images/Aicon.jpeg" height="100px" width="100px"
 			class="rounded-circle">
 		<ul class="nav justify-content-center">
 			<li class="nav-item"><button class=" btn btn-success"
-					data-target="#login" data-toggle="modal">Login</button> &nbsp;
+					data-target="#login" data-toggle="modal">Login <i class="fa fa-sign-in"></i></button> &nbsp;
 				&nbsp; &nbsp;
 			<li class="nav-item"><button class="btn btn-primary"
-					data-target="#signup" data-toggle="modal">SignUp</button> &nbsp;
+					data-target="#signup" data-toggle="modal">SignUp <i class="fa fa-user-plus"></i></button> &nbsp;
 				&nbsp; &nbsp;
 		</ul>
 	</div>
@@ -62,14 +79,22 @@
 					<form action="AjioServlet" method="post">
 						<div class="form-group" style="padding:5px;">
 						<div class="row">
-							<label for="email1" class="col-5" ><span style="font-size:24px;font-weight:bold;">Email:<i class="fa fa-search"></i></span> </label>
-							 <input type="email" class="form-control col-7 shadow-lg"
+							<label for="email1" class="col-4" ><span style="font-size:24px;font-weight:bold;">Email: </span> </label>
+							<div class="input-container col-8">
+    							<i class="fa fa-envelope-o icon"></i>
+							 	<input type="email" class="form-control  shadow-lg"
 								placeholder="Enter Email" name="email1"> <br>
 							</div>
+								
+						</div>
 						<div class="row">
-							<label for="pwd1" class="col-5" ><span style="font-size:24px;font-weight:bold;">Password:</span></label>
-							 <input type="password" class="form-control col-7 shadow-lg"
+							<label for="pwd1" class="col-4" ><span style="font-size:24px;font-weight:bold;">Password: </i></span> </label>
+							 
+							 <div class="input-container col-8">
+    							<i class="fa fa-key icon"></i>
+							 	<input type="password" class="form-control shadow-lg"
 								placeholder="Enter password" name="pwd1">
+							</div>
 						</div>
 						</div>
 				</div>
@@ -99,21 +124,32 @@
 					<form action="AjioServlet" method="post">
 						<div class="form-group" style="padding:5px;">
 						<div class="row">
-							<label for="name" class="col-5" ><span style="font-size:24px;font-weight:bold;">Name:</span></label>
-							<input type="text" class="form-control col-7 shadow-lg"
-								placeholder="Enter Name" name="name"> <br> 
+							<label for="name" class="col-4" ><span style="font-size:24px;font-weight:bold;">Name:</span></label>
+							<div class="input-container col-8">
+    							<i class="fa fa-user-o icon"></i>
+									<input type="text" class="form-control shadow-lg"
+										placeholder="Enter Name" name="name"> <br>
+							</div> 
 						</div>
 								
 						<div class="row">
-							<label for="email" class="col-5" ><span style="font-size:24px;font-weight:bold;">Email:</span></label>
-								 <input
-								type="email" class="form-control col-7 shadow-lg"
-								placeholder="Enter Email" name="email"> <br>
+							<label for="email" class="col-4" ><span style="font-size:24px;font-weight:bold;">Email:</span></label>
+								 
+								 <div class="input-container col-8">
+    								<i class="fa fa-envelope-o icon"></i>
+								 	<input
+										type="email" class="form-control shadow-lg"
+										placeholder="Enter Email" name="email"> <br>
+								</div>
 						</div>
 						<div class="row">
-							<label for="pwd" class="col-5" ><span style="font-size:24px;font-weight:bold;">Password:</span></label>
-							 <input type="password" class="form-control col-sm-7 shadow-lg"
-								placeholder="Enter password" name="pwd">
+							<label for="pwd" class="col-4" ><span style="font-size:24px;font-weight:bold;">Password:</span></label>
+							 
+							 <div class="input-container col-8">
+    							<i class="fa fa-key icon"></i>
+								 <input type="password" class="form-control shadow-lg"
+									placeholder="Enter password" name="pwd">
+							</div>
 						</div>
 						</div>
 				</div>
