@@ -7,10 +7,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Insert title here</title>
+<title>Ajio Clone</title>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome//4.2.0/font-awesome.min.css" rel="styleshhet"/>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
 <!-- jQuery library -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -61,13 +61,13 @@
 					<form action="AjioServlet" method="post">
 						<div class="form-group" style="padding:5px;">
 						<div class="row">
-							<label for="email1" class="col-5" ><span style="font-size:24px;font-weight:bold;">Email:</span></label>
-							 <input type="email" class="form-control col-7"
+							<label for="email1" class="col-5" ><span style="font-size:24px;font-weight:bold;">Email:<i class="fas fa-search"></i></span> </label>
+							 <input type="email" class="form-control col-7 shadow-lg"
 								placeholder="Enter Email" name="email1"> <br>
 							</div>
 						<div class="row">
 							<label for="pwd1" class="col-5" ><span style="font-size:24px;font-weight:bold;">Password:</span></label>
-							 <input type="password" class="form-control col-7"
+							 <input type="password" class="form-control col-7 shadow-lg"
 								placeholder="Enter password" name="pwd1">
 						</div>
 						</div>
@@ -76,7 +76,7 @@
 				<!-- Modal footer -->
 				<div class="modal-footer">
 					<input type="submit" value="LogIn" name="bt"
-						class="btn btn-outline-primary" style="width:100%;">
+						class="btn btn-outline-primary shadow-lg" style="width:100%;border-radius:20px;">
 				</div>
 				</form>
 
@@ -99,19 +99,19 @@
 						<div class="form-group" style="padding:5px;">
 						<div class="row">
 							<label for="name" class="col-5" ><span style="font-size:24px;font-weight:bold;">Name:</span></label>
-							<input type="text" class="form-control col-7"
+							<input type="text" class="form-control col-7 shadow-lg"
 								placeholder="Enter Name" name="name"> <br> 
 						</div>
 								
 						<div class="row">
 							<label for="email" class="col-5" ><span style="font-size:24px;font-weight:bold;">Email:</span></label>
 								 <input
-								type="email" class="form-control col-7"
+								type="email" class="form-control col-7 shadow-lg"
 								placeholder="Enter Email" name="email"> <br>
 						</div>
 						<div class="row">
 							<label for="pwd" class="col-5" ><span style="font-size:24px;font-weight:bold;">Password:</span></label>
-							 <input type="password" class="form-control col-sm-7"
+							 <input type="password" class="form-control col-sm-7 shadow-lg"
 								placeholder="Enter password" name="pwd">
 						</div>
 						</div>
@@ -120,7 +120,7 @@
 				<!-- Modal footer -->
 				<div class="modal-footer">
 					<input type="submit" value="Register" name="bt"
-						class="btn btn-outline-primary" style="width:100%">
+						class="btn btn-outline-primary shadow-lg" style="width:100%; border-radius:20px;">
 				</div>
 				</form>
 
@@ -129,7 +129,6 @@
 	</div>
 	<br>
 	<div id="demo" class="carousel slide" data-ride="carousel">
-
 		<!-- Indicators -->
 		<ul class="carousel-indicators">
 			<li data-target="#demo" data-slide-to="0" class="active"></li>
