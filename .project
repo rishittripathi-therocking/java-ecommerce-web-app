@@ -28,4 +28,11 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>WebContent/images/background.png</name>
+			<type>1</type>
+			<location>E:/java eclipse/Ajio/WebContent/images/background.png</location>
+		</link>
+	</linkedResources>
 </projectDescription>

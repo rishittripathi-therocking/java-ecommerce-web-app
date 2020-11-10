@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ajio Clone</title>
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -45,27 +45,145 @@
   text-align: center;
   border-radius:5px;
 }
+body {
+	background-image:url(images/background.png);
+}
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+button.btn {
+  width: 12rem;
+  height: auto;
+}
+button.btn .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+button.btn .circle .icon1 {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+button.btn .circle .icon1.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+button.btn .circle .icon1.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+button.btn .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #fff;
+  -webkit-transform: translate(1rem, 0);
+          transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #fff;
+}
 </style>
 </head>
 <body>
 	<div style="padding-left:40px; padding-right:40px;" >
 		<header>
-			<nav class="navbar bg-secondary navbar-expand">
+			<nav class="navbar navbar-expand" >
 			<div class="container">
-				<img alt="Not Found" src="images/Aicon.jpeg" height="100px" width="100px"
+				<div class="col-1">
+						<img alt="Not Found" src="images/Aicon.jpeg" height="100px" width="100px"
 					class="rounded-circle">
-				<ul class="nav justify-content-center">
-					<li class="nav-item"><button class=" btn btn-success"
-							data-target="#login" data-toggle="modal">Login <i class="fa fa-sign-in"></i></button> &nbsp;
-						&nbsp; &nbsp;
-					<li class="nav-item"><button class="btn btn-primary"
-							data-target="#signup" data-toggle="modal">SignUp <i class="fa fa-user-plus"></i></button> &nbsp;
-						&nbsp; &nbsp;
-				</ul>
+				</div>
+				<div class="offset-3 col-3" style="padding-top:15px">
+					<p style="text-transform: uppercase;
+							color: #25262a;
+    						letter-spacing: .2em;
+    						font-size: 20px;
+    						text-align:center;
+    						padding-left: 10px;
+    						padding-right: 10px;
+    						border: 2px solid #25262a;" >Ajio</p>
+				</div>
+				<div class="offset-1 col-3">
+					<ul class="nav justify-content-center">
+						<li class="nav-item"><button class=" btn"
+								data-target="#login" data-toggle="modal">
+										<span class="circle" style="color:#fff;padding-top:13px;padding-left:15px">
+									      <span class="fa fa-sign-in" style="font-size:20px;float:left;"></span>
+									    </span>
+									    <span class="button-text" style="padding-top:15px">Login</span> </button> &nbsp;
+							&nbsp; &nbsp;
+						<li class="nav-item"><button class="btn"
+								data-target="#signup" data-toggle="modal"> 
+										<span class="circle" style="color:#fff;padding-top:13px;padding-left:15px">
+									      <span class="fa fa-user-o" style="font-size:20px;float:left;"></span>
+									    </span>
+									    <span class="button-text" style="padding-top:15px">SignUp</span> </button> &nbsp;
+							&nbsp; &nbsp;
+					</ul>
+				</div>
 			</div>
 			</nav>
 		</header>
-	
+		<hr>
 		<div class="modal fade" id="login">
 			<div class="modal-dialog modal-dialog-centered" >
 				<div class="modal-content">
