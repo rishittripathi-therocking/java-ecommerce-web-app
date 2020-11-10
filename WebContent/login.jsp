@@ -9,6 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ajio Clone</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
+<link rel="stylesheet" href="fonts/icomoon/style.css">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -22,8 +23,8 @@
 	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 <style>
 /* Make the image fully responsive */
 .carousel-inner img {
@@ -141,6 +142,20 @@ button:hover .circle .icon.arrow {
 button:hover .button-text {
   color: #fff;
 }
+
+select {
+  transition: box-shadow .5s;
+  width: 125px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border: 1px;
+  border-radius: 3px;
+}
+select:hover {
+  box-shadow: 0 0 17px rgba(33,33,33,.5); 
+  ba
+}
+
 </style>
 </head>
 <body>
@@ -152,7 +167,7 @@ button:hover .button-text {
 						<img alt="Not Found" src="images/Aicon.jpeg" height="100px" width="100px"
 					class="rounded-circle">
 				</div>
-				<div class="offset-3 col-3" style="padding-top:15px">
+				<div class=" offset-4 col-2" style="padding-top:15px">
 					<p style="text-transform: uppercase;
 							color: #25262a;
     						letter-spacing: .2em;
@@ -162,8 +177,8 @@ button:hover .button-text {
     						padding-right: 10px;
     						border: 2px solid #25262a;" >Ajio</p>
 				</div>
-				<div class="offset-1 col-3">
-					<ul class="nav justify-content-center">
+				<div class=" offset-3 col-5">
+					<ul class="nav justify-content-center" style="float:right;">
 						<li class="nav-item"><button class=" btn"
 								data-target="#login" data-toggle="modal">
 										<span class="circle" style="color:#fff;padding-top:13px;padding-left:15px">
@@ -323,14 +338,15 @@ button:hover .button-text {
 		<br>
 		<center>
 			<form action="AjioServlet" method="post">
-				Select Category : <select name="category">
+				<b>Select Category :</b> 
 				
+				<select name="category" >
 				<!-- Displaying categories in drop down menu -->
 					<c:forEach var="obj" items="${pList}">
 						<option>${obj}</option>
 					</c:forEach>
-				</select> &nbsp;&nbsp; <input type="submit" class="btn btn-warning" value="Go"
-					name="bt">
+				</select> &nbsp;&nbsp; <input type="submit" class="btn btn-outline-primary" value="Go"
+					name="bt" style="width:70px;height:50px; border-radius:15px">
 			</form>
 		</center>
 		<br>
