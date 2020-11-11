@@ -161,13 +161,13 @@ select:hover {
 <body>
 	<div style="padding-left:40px; padding-right:40px;" >
 		<header>
-			<nav class="navbar navbar-expand" >
+			<nav class="navbar" >
 			<div class="container">
-				<div class="col-1">
+				<div class=" col-md-1">
 						<img alt="Not Found" src="images/Aicon.jpeg" height="100px" width="100px"
 					class="rounded-circle">
 				</div>
-				<div class=" offset-4 col-2" style="padding-top:15px">
+				<div class=" offset-md-2 col-md-2" style="padding-top:15px">
 					<p style="text-transform: uppercase;
 							color: #25262a;
     						letter-spacing: .2em;
@@ -177,7 +177,7 @@ select:hover {
     						padding-right: 10px;
     						border: 2px solid #25262a;" >Ajio</p>
 				</div>
-				<div class=" offset-3 col-5">
+				<div class="offset-md-2 col-md-5">
 					<ul class="nav justify-content-center" style="float:right;">
 						<li class="nav-item"><button class=" btn"
 								data-target="#login" data-toggle="modal">
@@ -336,46 +336,58 @@ select:hover {
 			</div>
 		</div>
 		<br>
-		<center>
-			<form action="AjioServlet" method="post">
-				<b>Select Category :</b> 
-				
-				<select name="category" >
-				<!-- Displaying categories in drop down menu -->
-					<c:forEach var="obj" items="${pList}">
-						<option>${obj}</option>
-					</c:forEach>
-				</select> &nbsp;&nbsp; <input type="submit" class="btn btn-outline-primary" value="Go"
-					name="bt" style="width:70px;height:50px; border-radius:15px">
-			</form>
-		</center>
+		
 		<br>
-		<table class="table table-hover table-bordered">
-			<tr class="bg-dark text-white">
-				<th>Image</th>
-				<th>Product Name</th>
-				<th>Price</th>
-			</tr>
-			<c:forEach var="obj" items="${pCategory}">
-				<tr>
-				<!--Displaying records in table according to the selected category-->
-					<td><img src="images/${obj.image_url}" class="rounded"
-						height="90px" width="90px"></td>
-					<td>${obj.name}</td>
-					<td>${obj.price}</td>
-				</tr>
-			</c:forEach>
-			<c:forEach var="obj" items="${pdList}">
-				<tr>
-				<!--Displaying all the records in product table-->
-					<td><img src="images/${obj.image_url}" class="rounded"
-						height="90px" width="90px"></td>
-					<td>${obj.name}</td>
-					<td>${obj.price}</td>
-				</tr>
-			</c:forEach>
-	
-		</table>
+		<div class="row">
+			<div class="col-sm-4">
+				<div style="height:100px; width: 70%;border:2px;border-radius:10px">
+				
+				</div>
+			
+			</div>
+			<div class="col-sm-8">
+				<center>
+					<form action="AjioServlet" method="post">
+						<b>Select Category :</b> 
+						
+						<select name="category" >
+						<!-- Displaying categories in drop down menu -->
+							<c:forEach var="obj" items="${pList}">
+								<option>${obj}</option>
+							</c:forEach>
+						</select> &nbsp;&nbsp; <input type="submit" class="btn btn-outline-primary" value="Go"
+							name="bt" style="width:70px;height:50px; border-radius:15px">
+					</form>
+				</center>
+				<table class="table table-hover table-bordered" style="margin-top:20px">
+					<tr class="bg-dark text-white">
+						<th>Image</th>
+						<th>Product Name</th>
+						<th>Price</th>
+					</tr>
+					<c:forEach var="obj" items="${pCategory}">
+						<tr>
+						<!--Displaying records in table according to the selected category-->
+							<td><img src="images/${obj.image_url}" class="rounded"
+								height="90px" width="90px"></td>
+							<td>${obj.name}</td>
+							<td>${obj.price}</td>
+						</tr>
+					</c:forEach>
+					<c:forEach var="obj" items="${pdList}">
+						<tr>
+						<!--Displaying all the records in product table-->
+							<td><img src="images/${obj.image_url}" class="rounded"
+								height="90px" width="90px"></td>
+							<td>${obj.name}</td>
+							<td>${obj.price}</td>
+						</tr>
+					</c:forEach>
+					
+				</table>
+				
+			</div>
+		</div>
 	</div>
 </body>
 </html>
