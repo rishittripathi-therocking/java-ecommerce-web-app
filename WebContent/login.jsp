@@ -179,6 +179,13 @@ select:hover {
 	overflow: hidden;
 }
 
+.card .card-image .img1 {
+	background-radius: 5px 5px 0 0;
+	background-clip: padding-box;
+	position:relative;
+	max-width: 100%;
+}
+
 .card .card-image img {
 	background-radius: 5px 5px 0 0;
 	background-clip: padding-box;
@@ -398,7 +405,7 @@ select:hover {
 			<div class="col-sm-5">
 				<div class="card">
 					<div class="card-image">
-						<img class="img-responsive" src="images/hero_1.jpg">
+						<img class="img-responsive img1" src="images/hero_1.jpg">
 						<span class="card-title">Shoes Promotion</span>
 					</div>
 					<div class="card-content">
@@ -471,5 +478,16 @@ select:hover {
 			</div>
 		</div>
 	</div>
+	<hr>
+	<footer>
+		<div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <p>
+            Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This Project is made with <i class="fa fa-heart-o" aria-hidden="true" style="color:red;"></i> by <a href="#" target="_blank" class="text-primary">Our Team</a>
+            </p>
+          </div>
+          
+        </div>
+	</footer>
 </body>
 </html>
