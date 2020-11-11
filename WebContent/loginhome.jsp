@@ -120,6 +120,37 @@ button.btn .button-text {
 .button1:hover .button-text {
   color: #fff;
 }
+
+select {
+  transition: box-shadow .5s;
+  width: 130px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border: 1px;
+  border-radius: 3px;
+}
+select:hover {
+  box-shadow: 0 0 17px rgba(33,33,33,.5); 
+}
+table {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.32), 0 2px 10px 0 rgba(0,0,0, 0.32);
+}
+
+table tr:hover {
+
+	box-shadow: 0 0 17px rgba(33,33,33,.5); 
+}
+input[type=number] {
+  padding:10px;
+  border:0;
+  border-bottom: 2px solid #000;
+  -moz-appearance: textfield;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+input[type=submit]:hover {
+box-shadow: 0 0 17px rgba(33,33,33,.5); 
+
+}
 </style>
 </head>
 <body>
@@ -166,16 +197,19 @@ button.btn .button-text {
 		</header>
 		<hr>
 	<br>
+	
 	<div class="container">
-		Select Category : <br>
-		<form action="AjioServlet" method="post">
-			<select name="ct">
-				<c:forEach var="obj" items="${pList}">
-					<option>${obj}</option>
-				</c:forEach>
-			</select> &nbsp;&nbsp; <input type="submit" class="btn btn-warning" value="GO"
-				name="bt">
-		</form>
+		<center>
+			Select Category : <br>
+			<form action="AjioServlet" method="post">
+				<select name="ct">
+					<c:forEach var="obj" items="${pList}">
+						<option>${obj}</option>
+					</c:forEach>
+				</select> &nbsp;&nbsp; <input type="submit" class="btn btn-outline-primary" value="GO"
+					name="bt" style="width:70px;height:50px; border-radius:15px">
+			</form>
+		<center>
 		<br> <br>
 		<form action="AjioServlet" method="post">
 			<table class="table table-hover table-bordered">
@@ -193,7 +227,7 @@ button.btn .button-text {
 							height="90px" width="90px"></td>
 						<td>${obj.name}</td>
 						<td>${obj.price}</td>
-						<td><input type="number" name="quantity" value="0" min="0"></td>
+						<td><input type="number" name="quantity" value="0" min="0" ></td>
 					</tr>
 				</c:forEach>
 
@@ -202,6 +236,15 @@ button.btn .button-text {
 				class="btn btn-primary" style="float: 'right';">
 		</form>
 	</div>
-
+<footer>
+		<div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <p>
+            Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This Project is made with <i class="fa fa-heart-o" aria-hidden="true" style="color:red;"></i> by <a href="#" target="_blank" class="text-primary">Our Team</a>
+            </p>
+          </div>
+          
+        </div>
+	</footer>
 </body>
 </html>

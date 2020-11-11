@@ -145,7 +145,7 @@ button:hover .button-text {
 
 select {
   transition: box-shadow .5s;
-  width: 125px;
+  width: 130px;
   height: 50px;
   background-color: #f2f2f2;
   border: 1px;
@@ -217,6 +217,14 @@ select:hover {
 	line-height: 48px;
 }
 
+table {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.32), 0 2px 10px 0 rgba(0,0,0, 0.32);
+}
+
+table tr:hover {
+
+	box-shadow: 0 0 17px rgba(33,33,33,.5); 
+}
 
 </style>
 </head>
