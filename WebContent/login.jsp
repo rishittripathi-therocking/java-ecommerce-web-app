@@ -153,8 +153,63 @@ select {
 }
 select:hover {
   box-shadow: 0 0 17px rgba(33,33,33,.5); 
-  ba
 }
+
+.card {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.32), 0 2px 10px 0 rgba(0,0,0, 0.32);
+}
+
+.card {
+	margin-top: 10px;
+	box-sizing: border-box;
+	border-radius:5px;
+	background-clip: padding-box;
+	min-height: 400px;
+}
+
+.card span.card-title {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.card .card-image {
+	position: relative;
+	overflow: hidden;
+}
+
+.card .card-image img {
+	background-radius: 5px 5px 0 0;
+	background-clip: padding-box;
+	position:relative;
+	min-width: 100%;
+}
+
+.card .card-image span.card-title {
+	position:absolute;
+	bottom:0;
+	left:0;
+	padding:16px;
+	color: #fff;
+}
+
+.card .card-content {
+	padding: 16px;
+	border-radius: 0 0 5px 5px;
+	background-clip: padding-box;
+	box-sizing: border-box;
+}
+
+.card .card-content p {
+	margin: 0;
+	color: inherit;
+}
+
+.card .card-content span.card-title {
+	line-height: 48px;
+}
+
 
 </style>
 </head>
@@ -338,14 +393,41 @@ select:hover {
 		<br>
 		
 		<br>
+		
 		<div class="row">
-			<div class="col-sm-4">
-				<div style="height:100px; width: 70%;border:2px;border-radius:10px">
-				
+			<div class="col-sm-5">
+				<div class="card">
+					<div class="card-image">
+						<img class="img-responsive" src="images/hero_1.jpg">
+						<span class="card-title">Shoes Promotion</span>
+					</div>
+					<div class="card-content">
+						<i class="badge badge-success">Best Seller</i>
+						<p>This is our best Selling Product in shoe category currently out of Stock</p>
+					</div>
 				</div>
-			
+				<div class="card">
+					<div class="card-image">
+						<img class="img-responsive" src="images/person_3.jpg">
+						<span class="card-title">EyeGlasses Promotion</span>
+					</div>
+					<div class="card-content">
+						<i class="badge badge-success">Best Seller</i>
+						<p>This is our best Selling Product in Eyeglasses category currently out of Stock</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image">
+						<img class="img-responsive" src="images/person_4.jpg">
+						<span class="card-title">SunGlasses Promotion</span>
+					</div>
+					<div class="card-content">
+						<i class="badge badge-success">Best Seller</i>
+						<p>This is our best Selling Product in Sunglasses category currently out of Stock</p>
+					</div>
+				</div>
 			</div>
-			<div class="col-sm-8">
+			<div class="col-sm-7">
 				<center>
 					<form action="AjioServlet" method="post">
 						<b>Select Category :</b> 

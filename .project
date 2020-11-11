@@ -34,5 +34,20 @@
 			<type>1</type>
 			<location>E:/java eclipse/Ajio/WebContent/images/background.png</location>
 		</link>
+		<link>
+			<name>WebContent/images/hero_1.jpg</name>
+			<type>1</type>
+			<location>E:/java eclipse/Ajio/WebContent/images/hero_1.jpg</location>
+		</link>
+		<link>
+			<name>WebContent/images/person_3.jpg</name>
+			<type>1</type>
+			<location>E:/java eclipse/Ajio/WebContent/images/person_3.jpg</location>
+		</link>
+		<link>
+			<name>WebContent/images/person_4.jpg</name>
+			<type>1</type>
+			<location>E:/java eclipse/Ajio/WebContent/images/person_4.jpg</location>
+		</link>
 	</linkedResources>
 </projectDescription>
