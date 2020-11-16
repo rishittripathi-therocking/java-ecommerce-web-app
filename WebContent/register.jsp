@@ -134,12 +134,22 @@ button.btn .circle .icon1.arrow::before {
 		<div class="alert alert-success " role="alert" style="text-align:center;">
 			You have been registered successfully
 		</div>
-	</div>
-	<center>
+		<center>
 		<h3><a class="button btn" href="login.jsp"><span class="circle" style="color:#fff;padding-top:13px;padding-left:15px">
 									      <span class="fa fa-sign-in" style="font-size:20px;float:left;"></span>
 									    </span>
 									    <span class="button-text" style="padding-top:15px">Click Here To Login With Your Credentials!</a></h3>
 	</center>
+	</div>
+	<footer>
+		<div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <p>
+            Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This Project is made with <i class="fa fa-heart-o" aria-hidden="true" style="color:red;"></i> by <a href="#" target="_blank" class="text-primary">Our Team</a>
+            </p>
+          </div>
+          
+        </div>
+	</footer>
 </body>
 </html>
