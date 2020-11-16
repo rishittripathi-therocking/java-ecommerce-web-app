@@ -232,8 +232,8 @@ box-shadow: 0 0 17px rgba(33,33,33,.5);
 				</c:forEach>
 
 			</table>
-			<input type="submit" name="bt" value="AddToCart"
-				class="btn btn-primary" style="float: 'right';">
+			<input type="submit" name="bt" value="Add To Cart"
+				class="btn btn-outline-primary" style="float: 'right';border-radius: 40px;">
 		</form>
 	</div>
 <footer>
