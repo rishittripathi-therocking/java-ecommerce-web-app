@@ -38,7 +38,7 @@ body {
   text-align:center;
 }
 .button.btn {
-  width: 50%;
+  width: 100%;
   height:150px;
   
 }
@@ -141,12 +141,15 @@ button.btn .circle .icon1.arrow::before {
 									    <span class="button-text" style="padding-top:15px">Click Here To Login With Your Credentials!</a></h3>
 	</center>
 	</div>
-	<footer>
+	<hr>
+	<footer style="bottom:0">
 		<div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
+          <center>
             <p>
             Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This Project is made with <i class="fa fa-heart-o" aria-hidden="true" style="color:red;"></i> by <a href="#" target="_blank" class="text-primary">Our Team</a>
             </p>
+            </center>
           </div>
           
         </div>
