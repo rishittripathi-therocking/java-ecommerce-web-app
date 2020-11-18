@@ -109,7 +109,7 @@ button.btn .button-text {
 }
 </style>
 </head>
-<body class="bg-dark text-white">
+<body >
 	<header>
 			<nav class="navbar" >
 			<div class="container">
