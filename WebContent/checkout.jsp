@@ -114,13 +114,7 @@ button.btn .button-text {
 table {
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.32), 0 2px 10px 0 rgba(0,0,0, 0.32);
 }
-input[type=number] {
-  padding:10px;
-  border:0;
-  border-bottom: 2px solid #000;
-  -moz-appearance: textfield;
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
-}
+
 table tr:hover {
 
 	box-shadow: 0 0 17px rgba(33,33,33,.5); 
@@ -179,7 +173,7 @@ box-shadow: 0 0 17px rgba(33,33,33,.5);
 		<form action="AjioServlet" method="post">
 			<br> <b><i>Customer Name :</i></b> <input type="text" name="name"
 				value="${uObj.name}"> <br> <br>
-			<table class="table table-hover table-bordered">
+			<table class="table table-hover table-bordered col-12">
 				<tr class="bg-dark text-white">
 					<th>Product Id</th>
 					<th>Image</th>
@@ -188,7 +182,7 @@ box-shadow: 0 0 17px rgba(33,33,33,.5);
 					<th>Quantity</th>
 				</tr>
 				<c:forEach var="entry" items="${selectedProdList}">
-					<tr class="bg-dark text-white">
+					<tr >
 						<input type="hidden" name="pId" value="${entry.key.id}">
 					<input type="hidden" name="quant" value="${entry.value}">
 						<td>${entry.key.id}</td>
