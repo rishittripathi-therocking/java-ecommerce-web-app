@@ -21,21 +21,49 @@
 <!-- Latest compiled JavaScript -->
 
 </head>
-<body class="bg-dark text-white">
-	<nav class="navbar bg-secondary navbar-expand">
-	<div class="container">
-		<img alt="Not Found" src="images/Aicon.jpeg" height="100px" width="100px"
-			class="rounded-circle">
-		<ul class="nav justify-content-center">
-			<li><a href="" class="btn btn-success">Welcome ${uObj.name}</a></li>
-			<li class="nav-item">
-				<form action="logout.jsp">
-					&nbsp; &nbsp;
-					<button class=" btn btn-danger" name="bt">LogOut</button>
-				</form>
-		</ul>
-	</div>
-	</nav>
+<body>
+	<header>
+			<nav class="navbar" >
+			<div class="container">
+				<div class=" col-md-1">
+						<img alt="Not Found" src="images/Aicon.jpeg" height="100px" width="100px"
+					class="rounded-circle">
+				</div>
+				<div class=" offset-md-2 col-md-2" style="padding-top:15px">
+					<p style="text-transform: uppercase;
+							color: #25262a;
+    						letter-spacing: .2em;
+    						font-size: 20px;
+    						text-align:center;
+    						padding-left: 10px;
+    						padding-right: 10px;
+    						border: 2px solid #25262a;" >Ajio</p>
+				</div>
+				<div class="offset-md-1 col-md-6">
+					<ul class="nav justify-content-center" style="float:right;">
+						<li class="nav-item"><button class=" btn">
+										<span class="circle" style="color:#fff;padding-top:13px;padding-left:15px">
+									      <span class="fa fa-user-o" style="font-size:20px;float:left;"></span>
+									    </span>
+									    <span class="button-text" style="padding-top:5px;padding-left:30px;">Hi ${uObj.name} </span> </button> &nbsp;
+							&nbsp; &nbsp;
+						<li class="nav-item">
+						<form action="logout.jsp">
+						<button class="btn button1"
+								data-target="#signup" data-toggle="modal"> 
+										<span class="circle" style="color:#fff;padding-top:13px;padding-left:15px">
+									      <span class="fa fa-sign-out" style="font-size:20px;float:left;"></span>
+									    </span>
+									    <span class="button-text" style="padding-top:15px">Sign Out</span> </button> 
+									    &nbsp;
+							&nbsp; &nbsp;
+						</form>
+					</ul>
+				</div>
+			</div>
+			</nav>
+		</header>
+		<hr>
 
 	<center>
 		<br>
