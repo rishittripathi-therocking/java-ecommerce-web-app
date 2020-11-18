@@ -20,6 +20,9 @@
 
 <!-- Latest compiled JavaScript -->
 <style>
+body {
+	background-image:url(images/background.png);
+}
 button {
   position: relative;
   display: inline-block;
