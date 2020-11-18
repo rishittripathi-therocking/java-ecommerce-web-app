@@ -19,23 +19,139 @@
 	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
+<style>
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+button.btn {
+  width: 12rem;
+  height: auto;
+}
+button.btn .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+button.btn .circle .icon1 {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
 
+button.btn .circle .icon1::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+button.btn .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+.button1:hover .circle {
+  width: 100%;
+}
+.button1:hover .circle .icon.arrow {
+  background: #fff;
+  -webkit-transform: translate(1rem, 0);
+          transform: translate(1rem, 0);
+}
+.button1:hover .button-text {
+  color: #fff;
+}
+</style>
 </head>
 <body class="bg-dark text-white">
-	<nav class="navbar bg-secondary navbar-expand">
-	<div class="container">
-		<img alt="Not Found" src="images/Aicon.jpeg" height="100px" width="100px"
-			class="rounded-circle">
-		<ul class="nav justify-content-center">
-			<li><a href="" class="btn btn-success">Welcome ${uObj.name}</a></li>
-			<li class="nav-item">
-				<form action="logout.jsp">
-					&nbsp; &nbsp;
-					<button class=" btn btn-danger" name="bt">LogOut</button>
-				</form>
-		</ul>
-	</div>
-	</nav>
+	<header>
+			<nav class="navbar" >
+			<div class="container">
+				<div class=" col-md-1">
+						<img alt="Not Found" src="images/Aicon.jpeg" height="100px" width="100px"
+					class="rounded-circle">
+				</div>
+				<div class=" offset-md-2 col-md-2" style="padding-top:15px">
+					<p style="text-transform: uppercase;
+							color: #25262a;
+    						letter-spacing: .2em;
+    						font-size: 20px;
+    						text-align:center;
+    						padding-left: 10px;
+    						padding-right: 10px;
+    						border: 2px solid #25262a;" >Ajio</p>
+				</div>
+				<div class="offset-md-1 col-md-6">
+					<ul class="nav justify-content-center" style="float:right;">
+						<li class="nav-item"><button class=" btn">
+										<span class="circle" style="color:#fff;padding-top:13px;padding-left:15px">
+									      <span class="fa fa-user-o" style="font-size:20px;float:left;"></span>
+									    </span>
+									    <span class="button-text" style="padding-top:5px;padding-left:30px;">Hi ${uObj.name} </span> </button> &nbsp;
+							&nbsp; &nbsp;
+						<li class="nav-item">
+						<form action="logout.jsp">
+						<button class="btn button1"
+								data-target="#signup" data-toggle="modal"> 
+										<span class="circle" style="color:#fff;padding-top:13px;padding-left:15px">
+									      <span class="fa fa-sign-out" style="font-size:20px;float:left;"></span>
+									    </span>
+									    <span class="button-text" style="padding-top:15px">Sign Out</span> </button> 
+									    &nbsp;
+							&nbsp; &nbsp;
+						</form>
+					</ul>
+				</div>
+			</div>
+			</nav>
+		</header>
+		<hr>
 	<br>
 	<center>
 		<h2>Items In Cart :</h2>
