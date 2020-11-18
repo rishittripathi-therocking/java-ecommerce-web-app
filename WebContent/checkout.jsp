@@ -9,6 +9,7 @@
 <title>Insert title here</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 <!-- jQuery library -->
 <script
@@ -197,7 +198,7 @@ box-shadow: 0 0 17px rgba(33,33,33,.5);
 			<center>
 				<br>
 				<h3>Order Total : ${totalPrice}</h3>
-				<br> <input type="submit" class="btn btn-info text-white"
+				<br> <input type="submit" class="btn btn-outline-info"
 					value="Continue" name="bt"> <br> <br>
 			</center>
 		</form>
