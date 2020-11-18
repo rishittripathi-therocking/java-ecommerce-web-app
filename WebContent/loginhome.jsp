@@ -212,7 +212,7 @@ box-shadow: 0 0 17px rgba(33,33,33,.5);
 		<center>
 		<br> <br>
 		<form action="AjioServlet" method="post">
-			<table class="table table-hover table-bordered">
+			<table class="table table-hover table-bordered col-12">
 				<tr class="bg-dark text-white">
 					<th>Image</th>
 					<th>Name</th>

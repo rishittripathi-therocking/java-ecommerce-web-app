@@ -174,8 +174,8 @@ box-shadow: 0 0 17px rgba(33,33,33,.5);
 	</center>
 	<div class="container">
 		<br>
-		<table >
-			<tr>
+		<table class="table table-hover table-bordered col-12">
+			<tr class="bg-dark text-white">
 				<th>Product Id</th>
 				<th>Image</th>
 				<th>Name</th>
@@ -197,7 +197,7 @@ box-shadow: 0 0 17px rgba(33,33,33,.5);
 			<br>
 			<h3>Order Total : ${totalPrice}</h3>
 			<br>
-			<a href="checkout.jsp"><input type="submit" class="btn btn-outline-info text-white"
+			<a href="checkout.jsp"><input type="submit" class="btn btn-outline-info"
 					value="Place Order" name="bt" style="border-radius:40px"></a>
 			<br> <br>
 			<form action="loginhome.jsp">
