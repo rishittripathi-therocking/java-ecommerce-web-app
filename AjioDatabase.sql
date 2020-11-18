@@ -11,7 +11,7 @@ create table product(id int primary key auto_increment, name varchar(30),price i
 image_url varchar(30),category varchar(30))auto_increment=101;
 
 create table orders(id int primary key auto_increment, user_id int,
-total_amount int,order_date timestamp,foreign key(user_id) references user(id))auto_increment=301;
+total_amount int,order_date timestamp(3),foreign key(user_id) references user(id))auto_increment=301;
 
 create table order_details(id int primary key auto_increment, 
 order_id int,product_id int,quantity int,foreign key(order_id) references orders (id),

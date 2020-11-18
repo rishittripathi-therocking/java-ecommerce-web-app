@@ -13,6 +13,7 @@ public class OrdersDao {
 		PreparedStatement ps = c.prepareStatement("insert into orders(user_id,total_amount,order_date) values(?,?,?)");
 		ps.setInt(1, uId);
 		ps.setInt(2, tAmount);
+		System.out.println(t);
 		ps.setTimestamp(3, t);
 		int row = ps.executeUpdate();
 
@@ -27,6 +28,7 @@ public class OrdersDao {
 		PreparedStatement ps = c.prepareStatement("select id from orders where user_id = ? and order_date= ?");
 		ps.setInt(1, uId);
 		ps.setTimestamp(2, t);
+		System.out.println(t);
 		ResultSet rs = ps.executeQuery();
 		if (rs.next()) {
 			return rs.getInt(1);
