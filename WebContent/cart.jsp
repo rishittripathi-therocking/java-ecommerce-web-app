@@ -9,6 +9,7 @@
 <title>Insert title here</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 <!-- jQuery library -->
 <script
@@ -110,6 +111,18 @@ button.btn .button-text {
 .button1:hover .button-text {
   color: #fff;
 }
+table {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.32), 0 2px 10px 0 rgba(0,0,0, 0.32);
+}
+
+table tr:hover {
+
+	box-shadow: 0 0 17px rgba(33,33,33,.5); 
+}
+input[type=submit]:hover {
+box-shadow: 0 0 17px rgba(33,33,33,.5); 
+
+}
 </style>
 </head>
 <body >
@@ -157,12 +170,12 @@ button.btn .button-text {
 		<hr>
 	<br>
 	<center>
-		<h2>Items In Cart :</h2>
+		<h2><b>Items In Cart :</b></h2>
 	</center>
 	<div class="container">
 		<br>
-		<table class="table table-hover table-bordered">
-			<tr class="bg-dark text-white">
+		<table >
+			<tr>
 				<th>Product Id</th>
 				<th>Image</th>
 				<th>Name</th>
@@ -170,7 +183,7 @@ button.btn .button-text {
 				<th>Quantity</th>
 			</tr>
 			<c:forEach var="entry" items="${selectedProdList}">
-				<tr class="bg-dark text-white">
+				<tr>
 					<td>${entry.key.id}</td>
 					<td><img src="images/${entry.key.image_url}" class="rounded"
 						height="90px" width="90px"></td>
@@ -184,12 +197,12 @@ button.btn .button-text {
 			<br>
 			<h3>Order Total : ${totalPrice}</h3>
 			<br>
-			<a href="checkout.jsp"><input type="submit" class="btn btn-info text-white"
-					value="Place Order" name="bt"></a>
+			<a href="checkout.jsp"><input type="submit" class="btn btn-outline-info text-white"
+					value="Place Order" name="bt" style="border-radius:40px"></a>
 			<br> <br>
 			<form action="loginhome.jsp">
-				<input type="submit" class="btn btn-info text-white"
-					value="More Shopping" name="bt">
+				<input type="submit" class="btn btn-outline-info"
+					value="More Shopping" name="bt" style="border-radius:40px">
 			</form>
 		</center>
 	</div>
