@@ -119,6 +119,18 @@ table tr:hover {
 
 	box-shadow: 0 0 17px rgba(33,33,33,.5); 
 }
+input[type=text] {
+  padding:10px;
+  border:0;
+  border-bottom: 2px solid #000;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+input[type=text]:focus {
+  padding:10px;
+  border:0;
+  border-bottom: 2px solid #555;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.32);
+}
 input[type=submit]:hover {
 box-shadow: 0 0 17px rgba(33,33,33,.5); 
 
