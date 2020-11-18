@@ -173,7 +173,13 @@ box-shadow: 0 0 17px rgba(33,33,33,.5);
 		<br>
 		<h2 class="display-4">You have successfully placed your order.</h2>
 		<br>
+		<i class="fa fa-check-circle" style="font-size:80px;color:#228B22"></i>
 		<h2 class="bg-light text-success">Thank you for visiting us !</h2>
+		<br>
+		<form action="loginhome.jsp">
+				<input type="submit" class="btn btn-outline-info"
+					value="More Shopping" name="bt" style="border-radius:40px">
+		</form>
 	</center>
 	<hr>
 	<footer>
