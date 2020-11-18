@@ -206,6 +206,7 @@ box-shadow: 0 0 17px rgba(33,33,33,.5);
 			</form>
 		</center>
 	</div>
+	<hr>
 	<footer>
 		<div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">

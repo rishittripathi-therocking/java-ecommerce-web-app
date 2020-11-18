@@ -99,5 +99,16 @@
 			</center>
 		</form>
 	</div>
+	<hr>
+	<footer>
+		<div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <p>
+            Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This Project is made with <i class="fa fa-heart-o" aria-hidden="true" style="color:red;"></i> by <a href="#" target="_blank" class="text-primary">Our Team</a>
+            </p>
+          </div>
+          
+        </div>
+	</footer>
 </body>
 </html>
