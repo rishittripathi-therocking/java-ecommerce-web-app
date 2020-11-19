@@ -174,25 +174,28 @@ box-shadow: 0 0 17px rgba(33,33,33,.5);
 	</center>
 	<div class="container">
 		<br>
-		<table class="table table-hover table-bordered col-12">
-			<tr class="bg-dark text-white">
-				<th>Product Id</th>
-				<th>Image</th>
-				<th>Name</th>
-				<th>Price</th>
-				<th>Quantity</th>
-			</tr>
-			<c:forEach var="entry" items="${selectedProdList}">
-				<tr>
-					<td>${entry.key.id}</td>
-					<td><img src="images/${entry.key.image_url}" class="rounded"
-						height="90px" width="90px"></td>
-					<td>${entry.key.name}</td>
-					<td>${entry.key.price}</td>
-					<td>${entry.value}</td>
+		<form action="AjioServlet">
+			<table class="table table-hover table-bordered col-12">
+				<tr class="bg-dark text-white">
+					<th>Product Id</th>
+					<th>Image</th>
+					<th>Name</th>
+					<th>Price</th>
+					<th>Quantity</th>
 				</tr>
-			</c:forEach>
-		</table>
+				<c:forEach var="entry" items="${selectedProdList}">
+					<tr>
+						<td>${entry.key.id}</td>
+						<td><img src="images/${entry.key.image_url}" class="rounded"
+							height="90px" width="90px"><input type="hidden" value="${entry.key.id}" name="orderID"></td>
+						<td>${entry.key.name}</td>
+						<td>${entry.key.price}</td>
+						<td>${entry.value}</td>
+					
+					</tr>
+				</c:forEach>
+			</table>
+		</form>
 		<center>
 			<br>
 			<h3>Order Total : ${totalPrice}</h3>

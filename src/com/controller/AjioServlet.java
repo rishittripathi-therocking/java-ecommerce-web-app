@@ -22,8 +22,7 @@ import com.dao.ProductDao;
 import com.dao.UserDao;
 import com.dto.Product;
 import com.dto.User;
-
-@WebServlet("/AjioServlet")
+;@WebServlet("/AjioServlet")
 public class AjioServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -42,6 +41,7 @@ public class AjioServlet extends HttpServlet {
 				se.setAttribute("pdList", pdList);
 				request.getRequestDispatcher("login.jsp").forward(request, response);
 				request.getRequestDispatcher("loginhome.jsp").forward(request, response);
+				request.getRequestDispatcher("cart.jsp").forward(request, response);
 
 			} catch (ClassNotFoundException | SQLException e) {
 				e.printStackTrace();
@@ -217,5 +217,6 @@ public class AjioServlet extends HttpServlet {
 				e.printStackTrace();
 			}
 		}
+		
 	}
 }
