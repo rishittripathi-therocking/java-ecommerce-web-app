@@ -333,7 +333,7 @@ table tr:hover {
 								<div class="input-container col-8">
 	    							<i class="fa fa-user-o icon"></i>
 										<input type="text" class="form-control shadow-lg"
-											placeholder="Enter Name" name="name"> <br>
+											placeholder="Enter Name" name="name" required> <br>
 								</div> 
 							</div>
 									
@@ -344,7 +344,7 @@ table tr:hover {
 	    								<i class="fa fa-envelope-o icon"></i>
 									 	<input
 											type="email" class="form-control shadow-lg"
-											placeholder="Enter Email" name="email"> <br>
+											placeholder="Enter Email" name="email" required> <br>
 									</div>
 							</div>
 							<div class="row">
@@ -353,7 +353,7 @@ table tr:hover {
 								 <div class="input-container col-8">
 	    							<i class="fa fa-key icon"></i>
 									 <input type="password" class="form-control shadow-lg"
-										placeholder="Enter password" name="pwd">
+										placeholder="Enter password" name="pwd" required>
 								</div>
 							</div>
 							</div>
