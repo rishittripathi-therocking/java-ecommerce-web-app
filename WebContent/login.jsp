@@ -378,8 +378,8 @@ table tr:hover {
 									 <div class="input-container col-8">
 	    								<i class="fa fa-envelope-o icon"></i>
 									 	<input
-											type="email" class="form-control shadow-lg"
-											placeholder="Enter Email" name="email" required> <br>
+											type="email" class="form-control shadow-lg" id="myEmail"
+											placeholder="Enter Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"  > <br>
 									</div>
 							</div>
 							<div class="row">
@@ -598,6 +598,11 @@ myInput.onkeyup = function() {
     length.classList.remove("valid");
     length.classList.add("invalid");
   }
+}
+
+function myFunction() {
+	  var x = document.getElementById("myEmail").pattern;
+	  document.getElementById("demo").innerHTML = x;
 }
 </script>
 </body>
